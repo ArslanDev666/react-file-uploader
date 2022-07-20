@@ -1,0 +1,19 @@
+.file-uploader {
+  background-color: var(--color-background);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-uploader__container {
+  min-height: 200px;
+  min-width: 450px;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4), rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 15px;
+  background: #ffffff;
+
+  display: flex;
+}

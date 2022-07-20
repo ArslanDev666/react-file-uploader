@@ -1,0 +1,18 @@
+:root {
+  --color-background: #fff4ef;
+  --color-text: #cda997;
+
+  --accent-color: #f4c9ae;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}

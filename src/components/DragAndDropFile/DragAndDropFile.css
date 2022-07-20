@@ -1,0 +1,32 @@
+.drag-and-drop-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.drag-and-drop-preview__icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.drag-and-drop-preview__icon svg {
+  width: 30px;
+  height: auto;
+  fill: var(--color-text);
+}
+
+.drag-and-drop-preview__text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 1px;
+}
