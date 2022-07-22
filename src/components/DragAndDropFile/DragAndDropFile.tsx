@@ -1,20 +1,33 @@
-import React from 'react'
+import React from "react";
 
 import { AiFillPicture } from "react-icons/ai";
+import { animated, config, SpringRef, useSpring } from "react-spring";
 
-import './DragAndDropFile.css'
+import "./DragAndDropFile.css";
 
-const DragAndDropFile = () => {
+interface IDragAndDropFileProps {
+  show: boolean;
+  animationRef: SpringRef;
+}
+
+const DragAndDropFile = ({ show, animationRef }: IDragAndDropFileProps) => {
+  const styles = useSpring({
+    to: {
+      opacity: show ? 1 : 0,
+    },
+    from: { opacity: 0 },
+    config: { ...config.stiff, duration: 100 },
+    ref: animationRef,
+  });
+
   return (
-    <div className='drag-and-drop-preview'>
+    <animated.div style={styles} className="drag-and-drop-preview">
       <div className="drag-and-drop-preview__icon">
         <AiFillPicture />
       </div>
-      <span className="drag-and-drop-preview__text">
-        Drag & drop a file to upload
-      </span>
-    </div>
-  )
-}
+      <span className="drag-and-drop-preview__text">Drag & drop a file to upload</span>
+    </animated.div>
+  );
+};
 
-export default DragAndDropFile
+export default DragAndDropFile;
