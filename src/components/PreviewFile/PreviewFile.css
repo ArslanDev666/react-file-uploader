@@ -1,44 +1,47 @@
 .preview-file {
   position: relative;
+
   width: 100%;
 }
 
 .preview-file__container {
-  width: 100%;
-  height: 100%;
+  position: relative;
 
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 0 30px 0 90px;
-  overflow: hidden;
   border-radius: 15px;
-  position: relative;
+  overflow: hidden;
 }
 .preview-file__progress {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: -1;
 
   height: 100%;
 
   background: #fff8f5;
-  z-index: -1;
 }
 
 .preview-file__image {
   position: absolute;
-  left: 0;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
   border-radius: 15px;
   overflow: hidden;
+
   background: #fff8f5;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transform: translate(-50%, -50%);
 }
 .preview-file__image img {
   width: 100%;
@@ -62,20 +65,22 @@
 }
 
 .preview-file__info h3 {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-  color: var(--color-text);
-  margin-bottom: 10px;
 
   max-width: 300px;
-  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 10px;
   overflow: hidden;
+
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 24px;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .preview-file__info-progress {
-  font-size: 16px;
   color: var(--color-text);
+  font-size: 16px;
+
   opacity: 0.8;
 }
 
