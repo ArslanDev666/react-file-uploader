@@ -16,10 +16,14 @@
   background: #ffffff;
   display: flex;
   position: relative;
-  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, min-height 0.25s ease-in-out, min-width 0.25s ease-in-out;
   transform: scale(1);
 }
 
 .file-uploader__container--drag {
   transform: scale(1.2);
+}
+.file-uploader__container--upload {
+  min-height: 150px;
+  min-width: 500px;
 }
