@@ -1,6 +1,7 @@
 {
   "name": "react-upload-file",
   "version": "0.1.0",
+  "homepage": "https://arslandev666.github.io/react-file-uploader/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
